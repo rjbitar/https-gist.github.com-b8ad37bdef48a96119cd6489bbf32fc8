@@ -1,0 +1,9 @@
+SELECT COUNT(DISTINCT utm_campaign) AS 'Campaign Count'
+FROM page_visits;
+
+SELECT COUNT(DISTINCT utm_source) AS 'Source Count'
+FROM page_visits;
+
+SELECT DISTINCT utm_campaign AS Campaigns,
+	  utm_source AS Sources
+FROM page_visits;
